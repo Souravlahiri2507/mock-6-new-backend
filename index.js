@@ -12,10 +12,6 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.status(200).send("Welcome Home");
-});
-
 app.use("/users", userRouter); //get
 
 app.use(auth); //middleware
